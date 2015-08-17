@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Управление заказами</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<nav>
+		<div class="container">
+			<ul class="tabs clearfix">
+				<li>
+					<a class="active" href="#" data-sort="all">Все заказы</a>
+				</li>
+				<li>
+					<a href="#" data-sort="inprogress">Текущие</a>
+				</li>
+				<li>
+					<a href="#" data-sort="completed">Завершенные</a>
+				</li>
+				<li>
+					<a href="#" data-sort="canceled">Отмененные</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<main>
+		<ul class="container order-list">
+			<li class="headers">
+				<div class="clearfix">
+					<div class="col arrow-sign">
+						<a href="#">Дата заказа</a>
+					</div>
+					<div class="col">
+						<a href="#">№ заказа</a>
+					</div>
+					<div class="status col">
+						<a href="#" >Текущий статус</a>
+					</div>
+				</div>
+			</li>
+
+			<li class="order" data-status="canceled">
+				<div class="clearfix">
+					<span class="more-info"></span>
+					<div class="col">
+						<a href="#">9 июля 2012</a>
+					</div>
+					<div class="col">
+						<a href="#">№0570</a>
+					</div>
+					<div class="cancel col">
+						<a href="#" >Отменен</a>
+					</div>
+				</div>
+			</li>
+
+			<li class="order" data-status="inprogress">
+				<div class="clearfix">
+					<span class="more-info"></span>
+					<div class="col">
+						<a href="#">3 июля 2012</a>
+					</div>
+					<div class="number col">
+						<a href="#">№ ME0017681</a>
+					</div>
+					<div class="inprogress col">
+						<a href="#">Отправлен курьерcкой службой</a>
+					</div>
+				</div>
+				<div class="additional clearfix">
+					
+					<div class="info">
+						<dl>
+							<dt>Имя получателя:</dt>
+							<dd>г. Киев, ул. Саксаганского, 65, кв. 11</dd>
+							<dt>Электронная почта:</dt>
+							<dd>+38 050 123-45-56</dd>
+							<dt>Доставка:</dt>
+							<dd>Курьером лично в руки. Адрес: г. Киев, ул. Саксаганского, 65, кв. 11</dd>
+							<dt>Оплата:</dt>
+							<dd>Наличными при получении</dd>
+						</dl>
+					</div>
+
+					<div class="items">
+						<div class="clearfix">
+							<div class="item_name">
+								<a href="#">Товары в заказе</a>
+							</div>
+							<div class="item_quantity">
+								<a href="#">Количество</a>
+							</div>
+							<div class="item_price">
+								<a href="#">Цена</a>
+							</div>
+						</div>
+					</div>
+					
+					<ul class="description-list">
+
+						<li class="description clearfix">	
+							<div class="item_name">
+								<a href="#">
+									<img src="img/order/book_cover1.png" alt="book cover">
+									<span class="book_name">Девушка c татуировкой дракона </span>
+									<span>Стиг Ларссон</span>
+									<span class="book_price_old"></span>
+									<span class="price">138грн.</span>
+								</a>
+							</div>
+							<div class="item_quantity"><a href="">1</a></div>
+							<div class="item_price"><a href="">138грн.</a></div>	
+						</li>
+
+						<li class="description clearfix">	
+							<div class="item_name">
+								<a href="#">
+									<img src="img/order/book_cover2.png" alt="book cover">
+									<span class="book_name">Девушка, которая взрывала воздушные замки</span>
+									<span>Стиг Ларссон</span>
+									<span class="book_price_old">170грн.</span>
+									<span class="price">138грн.</span>
+								</a>
+							</div>
+							<div class="item_quantity">
+								<a href="#">1</a>
+							</div>
+							<div class="item_price">
+								<a href="#">138грн.</a>
+							</li>
+						</li>
+
+						<li class="delivery">
+							<div>
+								<a href="#">
+									<span>Доставка:</span>
+									<span class="price">20грн.</span>
+								</a>
+							</div>
+						</li>
+
+						<li class="sumup">
+							<div class="bonus">
+								<a href="#">
+									<span class="bold">+38 бонусов</span>
+									<span>за этот заказ</span>
+								</a>
+							</div>
+							<div class="sum">
+								<a href="#">
+									<span class="grey">Сумма заказа:</span>
+									<span class="price">182грн.</span>
+								</a>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+			</li>
+
+			<li class="order" data-status="completed">
+				<div class="clearfix">
+					<span class="more-info"></span>
+					<div class="col">
+						<a href="#">17 мая 2012</a>
+					</div>
+					<div class="col">
+						<a href="#">№0570</a>
+					</div>
+					<div class="completed col">
+						<a href="#">Доставлен</a>
+					</div>
+				</div>
+			</li>	
+
+			<li class="order" data-status="completed">
+				<div class="clearfix">
+					<span class="more-info"></span>
+					<div class="col">
+						<a href="#">29 февраля 2012</a>
+					</div>
+					<div class="col">
+						<a href="#">№ ME0017681</a>
+					</div>
+					<div class="col completed">
+						<a href="#">Доставлен</a>
+					</div>
+				</div>
+			</li>			
+		</ul>
+	</main>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+
+</body>
+</html>
